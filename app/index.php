@@ -1,3 +1,7 @@
 <?php
+include 'autoloader.php';
 
-phpinfo();
+$discountCalculator = new DiscountCalculator();
+echo $discountCalculator->apply(80);
+
+echo $discountCalculator->apply(150);
